@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/product.schema.json",
+    "title": "Venets",
+    "description": "Events squema",
+    "properties": {
+      "code": {
+        "type": "string"
+      },
+      "recordId": {
+        "type": "string"
+      },
+      "recordNum": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string"
+      },
+      "values": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "maxItems": 8
+      },
+      "latitude": {
+        "type": "number"
+      },
+      "longitude": {
+        "type": "number"
+      },
+      "userLogin": {
+        "type": "string"
+      },
+      "timestamp": {
+        "type": "string",
+        "pattern": "[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1]) (2[0-3]|[01][0-9]):[0-5][0-9]"
+      }
+    },
+    "required": [ "code", "recordId", "recordNum", "type" ]
+  }
