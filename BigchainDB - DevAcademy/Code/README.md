@@ -1,4 +1,4 @@
-* Intslar librerias
+* Instalar librerias:
 npm install
 
 
@@ -7,7 +7,7 @@ npm start
 
 
 * Endpoints:
-Los endpoints están definidos en ./presentations/BigchainDB - DevAcademy/Code/app/routes
+Los endpoints están definidos en ./Code/app/routes
 
 http://localhost:3000/api/v1/keys (Administración de claves asimétricas. Necesita MongoDB)
 
